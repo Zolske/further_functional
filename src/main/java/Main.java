@@ -4,6 +4,7 @@ import java.util.stream.Stream;
 import static funcional.Challenge01.atIndex;
 import static funcional.Challenge02.createEmailList;
 import static funcional.Challenge03.checkLength;
+import static funcional.Challenge05.greeting;
 import static funcional.Challenge4.takeUsername;
 
 public class Main {
@@ -26,6 +27,8 @@ public class Main {
                 "info@stackoverflow.com",
                 "hannah.montana@mileycyrus.com").forEach(takeUsername);
 
+        // Challenge 5
+        greeting.accept("Albert", 39);
 
     }
 }
