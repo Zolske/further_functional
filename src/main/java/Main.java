@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.stream.Stream;
 import static funcional.Challenge01.atIndex;
 import static funcional.Challenge02.createEmailList;
+import static funcional.Challenge03.checkLength;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +15,8 @@ public class Main {
 
         // Challenge 2
         System.out.println(createEmailList.get());
+
+        // Challenge 3
+        Stream.of("", "Java", "Challenge", "Instruction", "1234567890").forEach(checkLength);
     }
 }
