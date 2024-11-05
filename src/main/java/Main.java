@@ -59,12 +59,16 @@ public class Main {
 //        equals.accept(list1, list2);
 //
 //        Challenge 9
-        List<String> validEmail1 = test.apply(returnEmailList.get(), "co.uk");
+        List<String> validEmail1 = test.apply(returnEmailList.get(), ".co.uk");
         List<String> validEmail2 = test.apply(returnEmailList.get(), ".com");
         List<String> validEmail3 = test.apply(returnEmailList.get(), "");
 
         validEmail1.forEach(System.out::println);
+        System.out.println("---------------");
         validEmail2.forEach(System.out::println);
+        System.out.println("---------------");
         validEmail3.forEach(System.out::println);
+
+
     }
 }
