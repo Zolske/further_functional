@@ -6,6 +6,8 @@ import static funcional.Challenge02.createEmailList;
 import static funcional.Challenge03.checkLength;
 import static funcional.Challenge05.greeting;
 import static funcional.Challenge06.printEachToConsole;
+import static funcional.Challenge07.printList;
+import static funcional.Challenge07.squaresNumbers;
 import static funcional.Challenge4.takeUsername;
 
 public class Main {
@@ -32,6 +34,16 @@ public class Main {
 //        greeting.accept("Albert", 39);
 
         // Challenge 6
-        printEachToConsole.accept(createEmailList.get());
+//        printEachToConsole.accept(createEmailList.get());
+
+        // Challenge 7
+        List<Integer> numList = new ArrayList<>();
+        numList.add(5);
+        numList.add(8);
+        numList.add(3);
+        numList.add(6);
+        numList.add(67);
+
+        squaresNumbers.andThen(printList).accept(numList);
     }
 }
