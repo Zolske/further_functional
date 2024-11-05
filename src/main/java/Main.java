@@ -1,14 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
-import static funcional.Challenge01.atIndex;
-import static funcional.Challenge02.createEmailList;
-import static funcional.Challenge03.checkLength;
-import static funcional.Challenge05.greeting;
-import static funcional.Challenge06.printEachToConsole;
+
 import static funcional.Challenge07.printList;
 import static funcional.Challenge07.squaresNumbers;
-import static funcional.Challenge4.takeUsername;
+import static funcional.Challenge08.equals;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -45,5 +41,18 @@ public class Main {
         numList.add(67);
 
         squaresNumbers.andThen(printList).accept(numList);
+
+        // Challenge 8
+        List<Integer> list1 = new ArrayList<Integer>();
+        list1.add(2);
+        list1.add(1);
+        list1.add(2);
+
+        List<Integer> list2 = new ArrayList<Integer>();
+        list2.add(2);
+        list2.add(1);
+        list2.add(2);
+
+        equals.accept(list1, list2);
     }
 }
